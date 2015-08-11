@@ -1,0 +1,52 @@
+<html>
+<!doctype>
+<head>
+<script type="text/javascript" src="library/jquery-2.1.4.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/game.css">
+</head>
+<body>
+
+<div id="playerDetailSection">
+</div>
+
+<div id="turnMessage">
+</div>
+
+<div id="mainBoard">
+</div>
+
+<div id="winMsg">
+</div>
+
+<script type="text/template" id="boardTmpl">	
+	<div data-value="" data-index="0" class="board-block thumbnail"></div>
+	<div data-value="" data-index="1" class="board-block thumbnail"></div>
+	<div data-value="" data-index="2" class="board-block thumbnail"></div>
+	<div data-value="" data-index="3" class="board-block thumbnail"></div>
+	<div data-value="" data-index="4" class="board-block thumbnail"></div>
+	<div data-value="" data-index="5" class="board-block thumbnail"></div>
+	<div data-value="" data-index="6" class="board-block thumbnail"></div>
+	<div data-value="" data-index="7" class="board-block thumbnail"></div>
+	<div data-value="" data-index="8" class="board-block thumbnail"></div>	
+</script>
+<script type="text/template" id="winMsgTmpl">
+	<div class="alert alert-success">Congrats!! <span class="win-name"></span> has won the match </div>
+</script>
+<script type="text/template" id="turnMsgTmpl">
+	<div class="alert alert-info">Player <span class="player-name"></span> turn!! </div>
+</script>
+<script type="text/template" id="playerDetailTmpl">
+	<div class="player-detail control-label">Enter <span class="player-index"></span> name:</div>
+	<input type="text" class="player-name form-control" />
+	<input type="button" class="player-detail-btn btn btn-primary" value="Save">	
+</script>
+<script type="text/javascript" src="model/board.model.js"></script>	
+<script type="text/javascript" src="model/player.model.js"></script>
+<script type="text/javascript" src="view/game.view.js"></script>
+<script type="text/javascript" src="controller/game.controller.js"></script>	
+</body>
+</html>

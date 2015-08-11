@@ -1,0 +1,47 @@
+.board-block{
+	width: 30%;
+    height: 60px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 5px;
+    text-align: center;
+    box-shadow: 0 2px 2px #777;
+    padding-top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#mainBoard{
+	width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.player-name{
+	width:50%;
+	display: inline;
+}
+
+#playerDetailSection{
+	text-align: center;
+	margin-top: 20%;
+}
+
+#winMsg{
+	text-align: center;
+	margin-top: 10%;
+}
+
+.winner-bg{
+	background-color: #00CED1 !important; 
+}
+
+div#turnMessage {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.hideMe{
+	visibility: hidden;
+}
